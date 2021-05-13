@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screamsound">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergancy Number"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:id="@+id/emergancytext"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <Button
+        android:layout_width="329dp"
+        android:layout_height="81dp"
+        android:layout_below="@+id/emergancytext"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/rectanglered"
+        android:text="Call Ambulance 102"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/ambulance"
+        />
+
+    <Button
+        android:layout_width="329dp"
+        android:layout_height="81dp"
+        android:layout_below="@+id/ambulance"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/rectanglered"
+        android:text="Women Helpline 1091"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/womenhelp"
+        />
+    <Button
+        android:layout_width="329dp"
+        android:layout_height="81dp"
+        android:layout_below="@+id/womenhelp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/rectanglered"
+        android:text="Ncq 011-26942369"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/ncq"
+        />
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".books"
+    tools:menu="@menu/menudata"
+
+    >
+    <ImageView
+        android:id="@+id/fakecall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/phonecall"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="60dp"
+        />
+    <ImageView
+        android:id="@+id/scream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/screamsound"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/fakecall"
+        />
+
+    <ImageView
+        android:id="@+id/emergancy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/emergency" />
+
+    <ImageView
+        android:id="@+id/chatbot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="102dp"
+        android:layout_marginBottom="115dp"
+        android:layout_toRightOf="@+id/emergancy"
+        android:background="@drawable/chatbot" />
+
+    <TextView
+        android:id="@+id/emergancy1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="75dp"
+        android:text="Emergancy"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/fakecall1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fake Call"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="65dp"
+        />
+    <TextView
+        android:id="@+id/scream1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scream Sound"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="200dp"
+        android:layout_toRightOf="@+id/fakecall1"
+        android:layout_marginLeft="100dp"
+        />
+
+    <TextView
+        android:id="@+id/chatbot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="125dp"
+        android:layout_marginBottom="75dp"
+        android:layout_toRightOf="@+id/emergancy1"
+        android:text="ChatBot"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/sendmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sendmessage"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="320dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gps"
+        android:layout_toRightOf="@+id/sendmsg"
+        android:background="@drawable/gpstracker"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="100dp"
+        />
+    <TextView
+        android:id="@+id/sendmsg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Message"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="430dp"
+        />
+    <TextView
+        android:id="@+id/gps1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gps Tracker"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/sendmsg1"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="430dp"
+        />
+   </RelativeLayout>

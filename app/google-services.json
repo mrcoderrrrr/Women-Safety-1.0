@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "761372607348",
+    "project_id": "booklogin-a194a",
+    "storage_bucket": "booklogin-a194a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761372607348:android:08e590757eff34e6dc6221",
+        "android_client_info": {
+          "package_name": "com.example.loginpage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761372607348-7q8o6efqcj9uuhpj6grk0davpinq7anr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCmrj7wUTLV23zioqoCvUlFKHK840TVpI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761372607348-7q8o6efqcj9uuhpj6grk0davpinq7anr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
