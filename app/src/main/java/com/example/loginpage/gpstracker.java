@@ -24,7 +24,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class gpstracker extends AppCompatActivity implements OnMapReadyCallback {
 
-    private static final int REQUEST_CODE = 1 ;
+    private static final int REQUEST_CODE = 1;
     private GoogleMap mMap;
 
     @Override
@@ -53,25 +53,19 @@ public class gpstracker extends AppCompatActivity implements OnMapReadyCallback 
         // Add a marker in Sydney and move the camera
         LatLng sydney = new LatLng(-34, 151);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney,10f));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 10f));
         enablemylocation();
 
 
     }
 
     private void enablemylocation() {
-        Location location = null;
-        double lat=location.getLatitude();
-        double lan=location.getLongitude();
-        mMap.addMarker(new MarkerOptions().position(lat+lan).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney,10f));
-    if(ContextCompat.checkSelfPermission(this,
-            Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
-
-        mMap.setMyLocationEnabled(true);
-    }
-    else{
-        ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION},REQUEST_CODE);
+        if(ContextCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
+            mMap.setMyLocationEnabled(true);
+        }
+        else{
+            ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION},REQUEST_CODE);
         }
     }
 
