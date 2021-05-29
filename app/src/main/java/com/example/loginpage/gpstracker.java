@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.location.Location;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -53,14 +54,20 @@ public class gpstracker extends AppCompatActivity implements OnMapReadyCallback 
         LatLng sydney = new LatLng(-34, 151);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney,10f));
-enablemylocation();
+        enablemylocation();
 
 
     }
 
     private void enablemylocation() {
+        Location location = null;
+        double lat=location.getLatitude();
+        double lan=location.getLongitude();
+        mMap.addMarker(new MarkerOptions().position(lat+lan).title("Marker in Sydney"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney,10f));
     if(ContextCompat.checkSelfPermission(this,
             Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
+
         mMap.setMyLocationEnabled(true);
     }
     else{

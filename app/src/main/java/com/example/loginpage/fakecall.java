@@ -21,7 +21,6 @@ public class fakecall extends AppCompatActivity {
 TextView fakecall;
     Button call5,call10,call15,call20;
     EditText calltext;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +31,7 @@ TextView fakecall;
         call15 = (Button) findViewById(R.id.call15);
         call20 = (Button) findViewById(R.id.call20);
         calltext = (EditText) findViewById(R.id.callname);
+
         //5 second -- fake call module
         call5.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,12 +39,15 @@ TextView fakecall;
                 CountDownTimer countDownTimer=new CountDownTimer(5000,5000) {
                     @Override
                     public void onTick(long millisUntilFinished) {
-                        startActivity(new Intent(fakecall.this,callactivity.class));
+                        String str=calltext.getText().toString();
+                        Intent i=new Intent(fakecall.this,callactivity.class);
+                        i.putExtra("callersname",str);
+                        startActivity(i);
                     }
 
                     @Override
                     public void onFinish() {
-                        startActivity(new Intent(fakecall.this,fakecall.getClass()));
+                        startActivity(new Intent(fakecall.this,fakecall.class));
                         Toast.makeText(fakecall.this,"5 sec Completed",Toast.LENGTH_SHORT).show();
                     }
                 }.start();
@@ -57,7 +60,10 @@ TextView fakecall;
                 CountDownTimer countDownTimer=new CountDownTimer(10000,10000) {
                     @Override
                     public void onTick(long millisUntilFinished) {
-                        startActivity(new Intent(fakecall.this,callactivity.class));
+                        String str=calltext.getText().toString();
+                        Intent i=new Intent(fakecall.this,callactivity.class);
+                        i.putExtra("callersname",str);
+                        startActivity(i);
                     }
 
                     @Override
@@ -75,7 +81,10 @@ TextView fakecall;
                 CountDownTimer countDownTimer=new CountDownTimer(15000,15000) {
                     @Override
                     public void onTick(long millisUntilFinished) {
-                        startActivity(new Intent(fakecall.this,callactivity.class));
+                        String str=calltext.getText().toString();
+                        Intent i=new Intent(fakecall.this,callactivity.class);
+                        i.putExtra("callersname",str);
+                        startActivity(i);
                     }
 
                     @Override
@@ -93,7 +102,10 @@ TextView fakecall;
                 CountDownTimer countDownTimer=new CountDownTimer(20000,20000) {
                     @Override
                     public void onTick(long millisUntilFinished) {
-                        startActivity(new Intent(fakecall.this,callactivity.class));
+                        String str=calltext.getText().toString();
+                        Intent i=new Intent(fakecall.this,callactivity.class);
+                        i.putExtra("callersname",str);
+                        startActivity(i);
                     }
 
                     @Override
